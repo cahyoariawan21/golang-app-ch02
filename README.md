@@ -1,4 +1,4 @@
-# <img align="left" width="40" alt="API" src="https://cdn-icons-png.flaticon.com/128/7977/7977238.png"> golang-app-chapter02
+## <img align="left" width="40" alt="API" src="https://cdn-icons-png.flaticon.com/128/7977/7977238.png"> golang-app-chapter02
 <br/>
 
 <p align="center">
