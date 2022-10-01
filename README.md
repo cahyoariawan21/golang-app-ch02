@@ -18,11 +18,6 @@
 
 <br/>
 
-```go
-go mod init [directory_name]
-```
-
-
 <details>
 <summary>Attachment</summary>
 <br>
