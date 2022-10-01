@@ -13,10 +13,14 @@
 <br/>
   
 ![image](https://user-images.githubusercontent.com/38809579/193411328-9e22ee37-bdff-4037-971c-9e16b3d65eca.png)
-  
+
 </details>
 
+<br/>
 
+```
+go mod init [directory_name]
+```
 
 
 <details>
@@ -25,9 +29,3 @@
 This is Attachment I.
 </details>
 
-
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
