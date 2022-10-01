@@ -18,7 +18,7 @@
 
 <br/>
 
-```
+```go
 go mod init [directory_name]
 ```
 
