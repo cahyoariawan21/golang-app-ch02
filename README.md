@@ -12,7 +12,7 @@
 <summary>Workflow Music API Crud</summary>
 <br/>
   
-![image](https://user-images.githubusercontent.com/38809579/193411328-9e22ee37-bdff-4037-971c-9e16b3d65eca.png)
+![image](https://user-images.githubusercontent.com/38809579/193417888-4fee07ed-98b9-4e5a-a24b-72ff74cfabd2.png)
 
 </details>
 
