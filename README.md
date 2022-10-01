@@ -12,7 +12,7 @@
 - Create simple CRUD MUSIC API Service.
 
 <details>
-<summary>Workflow Music API Crud</summary>
+<summary>Workflow</summary>
 <br/>
   
 ![image](https://user-images.githubusercontent.com/38809579/193417888-4fee07ed-98b9-4e5a-a24b-72ff74cfabd2.png)
