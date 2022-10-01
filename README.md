@@ -5,8 +5,11 @@
 <img width="200" alt="©irfancahyo" src="https://user-images.githubusercontent.com/38809579/193409619-4f943ca1-4469-4bab-a1b8-9f5d3b350d0b.png">
 </p>
 <h1 align="center">Music API Crud</h1>
-
 <br/>
+
+### This project is simple CRUD API :
+
+- Create simple CRUD MUSIC API Service.
 
 <details>
 <summary>Workflow Music API Crud</summary>
