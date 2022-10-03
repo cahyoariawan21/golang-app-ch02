@@ -20,8 +20,6 @@
 
 </details>
 
-<br/>
-
 <details>
 <summary>Attachment</summary>
 <br>
