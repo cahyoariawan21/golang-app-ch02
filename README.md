@@ -25,6 +25,19 @@
 <details>
 <summary>Attachment</summary>
 <br>
-This is Attachment I.
+<h2>GET ALL MUSIC</h2>
+
+![Screen Shot 2022-10-03 at 12 24 54](https://user-images.githubusercontent.com/38809579/193556735-0857eace-84b9-40fb-b1c2-8a38edafeb3a.png)
+
+<br>
+<br>
+
+<h2>GET MUSIC BY ID</h2>
+
+![Screen Shot 2022-10-03 at 17 24 17](https://user-images.githubusercontent.com/38809579/193556830-3f1d8b80-01f7-4792-a6ca-439345c5fc47.png)
+
+<br>
+<br>
+
 </details>
 
