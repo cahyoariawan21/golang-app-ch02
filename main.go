@@ -1,5 +1,14 @@
 package main
 
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/gorilla/mux"
+)
+
 type Music struct {
 	ID         string  `json:"id"`
 	Title      string  `json:"title"`
@@ -11,8 +20,25 @@ type Singer struct {
 	Name string `json:"name"`
 }
 
-var music []Music
+// slice of music
+var musics []Music
+
+func getAllMusic(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(musics)
+}
 
 func main() {
 	// Your code start here
+	r := mux.NewRouter()
+
+	// insert data into slice music
+	musics = append(musics, Music{ID: "1", Title: "Amazing", AlbumTitle: "Who Cares?", Singer: &Singer{Name: "Rex Orange County"}})
+	musics = append(musics, Music{ID: "2", Title: "Shy Away", AlbumTitle: "Scaled and Icy", Singer: &Singer{Name: "Twenty One Pilots"}})
+	// Router
+	r.HandleFunc("/musics", getAllMusic).Methods("GET")
+
+	// print log while http server is running on port: 8080
+	fmt.Printf("Starting server on port: 8080")
+	log.Fatal(http.ListenAndServe(":8080", r))
 }
