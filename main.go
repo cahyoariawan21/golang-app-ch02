@@ -51,6 +51,24 @@ func createMusic(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(musics)
 }
 
+func updateMusic(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	params := mux.Vars(r)
+
+	// get id music to update
+	for i, item := range musics {
+		if item.ID == params["id"] {
+			musics = append(musics[:i], musics[i+1:]...)
+			var music Music
+			_ = json.NewDecoder(r.Body).Decode(&music)
+			music.ID = params["id"]
+			musics = append(musics, music)
+			json.NewEncoder(w).Encode(musics)
+
+		}
+	}
+}
+
 func main() {
 	// Your code start here
 	r := mux.NewRouter()
@@ -62,6 +80,7 @@ func main() {
 	r.HandleFunc("/musics", getAllMusic).Methods("GET")
 	r.HandleFunc("/musics/{id}", getMusicByID).Methods("GET")
 	r.HandleFunc("/musics", createMusic).Methods("POST")
+	r.HandleFunc("/musics/{id}", updateMusic).Methods("POST")
 
 	// print log while http server is running on port: 8080
 	fmt.Printf("Starting server on port: 8080")
