@@ -46,4 +46,22 @@
 
 </details>
 
+<h2>UPDATE MUSIC</h2>
+
+![Screen Shot 2022-10-04 at 09 17 10](https://user-images.githubusercontent.com/38809579/193722089-bc96df86-1e3c-49e8-9233-c123e44862ea.png)
+
+<br>
+<br>
+
+</details>
+
+<h2>DELETE MUSIC</h2>
+
+![Screen Shot 2022-10-04 at 09 29 51](https://user-images.githubusercontent.com/38809579/193722125-710872f5-38f5-4195-a872-100b16061b24.png)
+
+<br>
+<br>
+
+</details>
+
 
