@@ -69,6 +69,19 @@ func updateMusic(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func deleteMusic(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	params := mux.Vars(r)
+
+	for i, item := range musics {
+		if item.ID == params["id"] {
+			musics = append(musics[:i], musics[i+1:]...)
+			json.NewEncoder(w).Encode("Delete Item Has Been Success!")
+			break
+		}
+	}
+}
+
 func main() {
 	// Your code start here
 	r := mux.NewRouter()
@@ -81,6 +94,7 @@ func main() {
 	r.HandleFunc("/musics/{id}", getMusicByID).Methods("GET")
 	r.HandleFunc("/musics", createMusic).Methods("POST")
 	r.HandleFunc("/musics/{id}", updateMusic).Methods("POST")
+	r.HandleFunc("/musics/{id}", deleteMusic).Methods("DELETE")
 
 	// print log while http server is running on port: 8080
 	fmt.Printf("Starting server on port: 8080")
